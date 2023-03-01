@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary:#FFA700;
+    --black: #2B2B2B;
+    --gray: #808080;
+    --white: #FFFFFF;
+    --dirty_white: #F5F5F5;
+    --h1: 90px;
+}
+
+/*------------Header Style starts here----*/
+
+.header{
+    background-color: var(--black);
+    padding: 1rem 0;
+}
+
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--white);
+}
+
+.header__logo span{
+    color: var(--primary);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li a{
+    color: var(--dirty_white);
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+nav ul li a:hover{
+    color: var(--primary);
+    
+}
+
+.active{
+    color: var(--primary);
+}
+
+/*------------Header Style ends here----*/
+
+.banner{
+    padding: 6rem 0;
+}
+
+.banner__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.banner img{
+    width: 40rem;
+}
+
+.banner__content{
+    flex-direction: column;
+}
+
+.banner__content h1{
+    color: var(--primary);
+    font-size: 90px;
+    line-height: 1;
+}
+
+.banner__content a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.banner__content a:hover{
+    background-color: var(--black);
+}
+
+.banner__content p{
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+/*------ SERVICES QUOTES STARTS HERE------*/
+
+.get_a_quote{
+    background-color: var(--black);
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.quote__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quote{
+    text-align: center;
+    width: 335px;
+    justify-content: center;
+}
+
+.quote a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.quote a:hover{
+    background-color: var(--black);
+    border: 2px solid var(--primary);
+}
+
+.quote img{
+    margin-bottom: 1rem;
+}
+
+.quote h3{
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.quote p{
+    text-align: justify;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+
+/*------ ABOUT SECTION STARTS HERE------*/
+
+.about-me{
+    height: 768px;
+    display: flex;
+    align-items: center;
+}
+
+.about__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.aboutme__content h2{
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.aboutme__content p{
+    text-align: justify;
+}
+
+/*------ LATEST TRENDS SECTION STARTS HERE------*/
+
+.latest-trends{
+    height: 775px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.latest-trends-text{
+    margin-bottom: 4rem;
+}
+
+.latest-trends-text h1{
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.latest-trends-text p{
+    color: var(--dirty_white);
+    
+}
+
+.latest-trends__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.lt-card{
+    width: 349px;
+    background-color: var(--dirty_white);
+    border-radius: 20px;
+    transition: 300ms ease;
+    
+}
+
+.lt-card:hover{
+    transform: scale(1.05);
+}
+
+.lt-card h4{
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.lt-card p{
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.lt-card a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.lt-card a:hover{
+    color: var(--black);
+}
+
+.lt-card img{
+    width: 100%;
+}
+
+.desc__content{
+    margin: 2rem 1rem;
+}
+
+/*------ FEEL FREE SECTION STARTS HERE------*/
+
+.feel-free{
+    background-color: var(--primary);
+    height: 326px;
+    display: flex;
+    align-items: center;
+}
+
+.feel-free__content{
+    text-align: center;
+}
+
+.feel-free__content h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.feel-free__content a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dirty_white);
+    background-color: var(--black);
+    border-radius: 30px;
+    padding: 1.2rem 1.8rem;
+    margin-top: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.feel-free__content a:hover{
+    background-color: var(--dirty_white);
+    color: var(--black);
+}
+
+/*------ FOOTER SECTION STARTS HERE------*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    height: 140px;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.soc-media-address__content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.soc-media{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.soc-media i{
+    color: var(--gray);
+    font-size: 34px;
+    transition: 0.3s ease;
+}
+
+.soc-media i:hover{
+    color: var(--primary);
+}
+
+.address p{
+    color: var(--gray);
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+}
+
+.copyright p{
+    color: var(--gray);
+}
+
+
+/*------ ABOUT ME SECTION STARTS HERE------*/
+
+.about-section{
+    height: 916px;
+    display: flex;
+    align-items: center;
+}
+
+.tyntk__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tyntk__content h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tyntk__content h1{
+    font-size: 90px;
+    color: var(--primary);
+}
+
+.tyntk__content p{
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.tyntk__content{
+    width: 460px;
+}
+
+.tyntk__content a {
+    text-decoration: none;
+}
+
+.tyntk__content a i {
+    font-size: 25px;
+    color: var(--primary);
+}
+
+.tyntk-soc-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.scrldwn{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.scrldwn i{
+    font-size: 48px;
+    color: var(--primary);
+}
+
+/*------ RECENT PROJECT SECTION STARTS HERE------*/
+
+.recent-projects{
+    background-color: var(--black);
+    height: 1360px;
+    display: flex;
+    align-items: center;
+}
+
+.recent-project-title{
+    margin-bottom: 6rem;
+}
+
+.recent-project-title h2 {
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.recent-project-title p {
+    color: var(--dirty_white);
+    font-size: 18px;
+}
+
+.recent-project__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+}
+
+.rp-card{
+    width: 349px;
+    height: 450px;
+    background-color: var(--dirty_white);
+    border-radius: 20px;
+    transition: 300ms ease;
+}
+
+.rp-card img{
+    width: 100%;
+}
+
+.rp-desc__content{
+    margin: 2rem 1rem;
+}
+
+.rp-desc__content h4{
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+
+/* SERVICES STARTS HERE */
+
+.web-design{
+    display: flex;
+    align-items: center;
+    height: 916px;
+}
+
+.web-design__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.web-design__content{
+    width: 521px;
+}
+
+.web-design__content h1{
+    font-size: 50px;
+    line-height: 1;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.web-design__content p{
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.price h5,h6{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.price h3{
+    font-size: 33px;
+    color: var(--primary);
+}
+
+.price h6{
+    font-style: italic;
+}
+
+/* GRAPHICS AND VECTOR SECTION STARTS HERE */
+
+.graphics-vector{
+    background-color: var(--black);
+    height: 790px;
+    display: flex;
+    align-items: center;
+}
+
+.graphics-vector__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.web-design__content .white-text{
+    color: var(--dirty_white);
+}
+
+/* SOCIAL MEDIA SPECIALIST STARTS HERE */
+
+.soc-med-specialist{
+    display: flex;
+    align-items: center;
+    height: 830px;
+}
+
+.soc-med-specialist__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
