@@ -405,7 +405,7 @@ nav ul li a:hover{
 }
 
 .tyntk__content{
-    width: 460px;
+    /* width: 460px; */
 }
 
 .tyntk__content a {
@@ -495,11 +495,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
 }
 
-.web-design__content{
-    width: 521px;
-}
 
 .web-design__content h1{
     font-size: 50px;
@@ -540,6 +538,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
 }
 
 .web-design__content .white-text{
@@ -558,6 +557,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
 }
 
 /* CONTACT STARTS HERE */
@@ -583,10 +583,11 @@ nav ul li a:hover{
 
 
 
-.contact__content h1{
+.test h1{
     font-size: 70px;
     color: var(--primary);
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
+    margin-bottom: 2rem;
 }
 
 .contact__content p{
@@ -713,13 +714,13 @@ button{
     margin-bottom: 2rem;
 }
 
-.designing-concept-section a,.design-to-code-section a{
+.read-more{
     text-decoration: none;
     color: var(--primary);
     transition: .3s ease;
 }
 
-.designing-concept-section a:hover,.design-to-code-section a:hover{
+.read-more:hover{
     color: var(--black);
 }
 
@@ -803,6 +804,17 @@ button{
     .banner__content a{
         text-align: center;
     }
+
+    .banner img, .about__wrapper img{
+        width: 100%;
+    }
+
+    .aboutme__content h2{
+        text-align: center;
+    }
+
+
+    
 
     .container{
         width: 100%;
@@ -902,8 +914,12 @@ button{
 
     /* ABOUT SECTION */
 
-    .ctyntk__wrapper{
+    .tyntk__wrapper{
         flex-direction: column;
+    }
+
+    .tyntk__wrapper img{
+        width: 100%;
     }
 
     .recent-project-title{
@@ -935,16 +951,43 @@ button{
         grid-template-columns: 1fr;
     }
 
-    .updates-category__content{
+    /* .updates-category__content{
         display: none;
-    }
+    } */
 
     /* CONTACT SECTION */
 
     .contact__wrapper{
         flex-direction: column;
     }
+
+    .web-design__wrapper img, .graphics-vector__content img, .soc-med-specialist__wrapper img {
+        width: 100%;
+    }
+
+    .author-date-tags__content{
+        display: block;
+    }
+
+    .author-date-tags{
+        margin-bottom: .5rem;
+    }
+
+    .updates__wrapper{
+        flex-direction: column;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width: 992px){
     .container{
