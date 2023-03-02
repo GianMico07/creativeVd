@@ -330,7 +330,7 @@ nav ul li a:hover{
     padding: 3rem 0;
 }
 
-.footer, .border{
+.border{
     border-top: 1.2px solid var(--dirty_white);
 }
 
@@ -650,7 +650,7 @@ button{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .latest-trends-section h1 {
@@ -713,6 +713,16 @@ button{
     margin-bottom: 2rem;
 }
 
+.designing-concept-section a,.design-to-code-section a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: .3s ease;
+}
+
+.designing-concept-section a:hover,.design-to-code-section a:hover{
+    color: var(--black);
+}
+
 .recent-post{
     margin-top: 6rem;
     height: 500px;
@@ -750,6 +760,11 @@ button{
     margin-top: 2rem;
 }
 
+#tag-active{
+    color: var(--white);
+    background-color: var(--black);
+}
+
 .tags a{
     display: inline-block;
     text-decoration: none;
@@ -762,15 +777,14 @@ button{
     transition: .3s ease;
 }
 
+
+
+
 .tags a:hover{
     background-color: var(--black);
     color: var(--dirty_white);
 }
 
-.tag-active{
-    color: var(--dirty_white);
-    background-color: var(--black);
-}
 
 
 
