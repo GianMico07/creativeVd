@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Creative Visual Design</title>
 </head>
@@ -23,13 +24,16 @@
                         <li><a class="active" href="/index.html">Home</a></li>
                         <li><a class=" " href="/about.html">About</a></li>
                         <li><a class=" " href="/services.html">Services</a></li>
-                        <li><a class=" " href="">Updates</a></li>
-                        <li><a class=" " href="">Contact</a></li>
+                        <li><a class=" " href="/updates.html">Updates</a></li>
+                        <li><a class=" " href="/contacts.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <div class="toggle__menu">
-                    <i class="fa-solid fa-bars"></i>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
             </div>
@@ -169,14 +173,6 @@
         </div>
     </footer>
 
-    <script>
-        const nav = document.querySelector(".nav");
-        const togglemenu = document.querySelector(".toggle__menu");
-
-        togglemenu.addEventListener("click", ()=>{
-            togglemenu.classList.toggle("open");
-            nav.classList.toggle("open");
-        })
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>

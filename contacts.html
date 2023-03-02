@@ -9,7 +9,7 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header border1">
         <div class="container">
             <div class="header__wrapper">
 
@@ -18,15 +18,22 @@
                     <h2>Creative <Span>Visual</Span> Designs</h2>
                 </div>
     
-                <nav>
+                <nav class="nav">
                     <ul>
                         <li><a class="" href="/index.html">Home</a></li>
                         <li><a class="" href="/about.html">About</a></li>
                         <li><a class="" href="/services.html">Services</a></li>
                         <li><a class=""href="/updates.html">Updates</a></li>
-                        <li><a class="active"href="">Contact</a></li>
+                        <li><a class="active"href="/contacts.html">Contact</a></li>
                     </ul>
                 </nav>
+
+                <div class="toggle__menu">
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
             </div>
         </div>
@@ -48,9 +55,28 @@
                         </div>
 
                         <div class="contact">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i> <h6>Baloc road, Brgy San Ignacio San Pablo City <br> Laguna Philippines 4000</h6>
+                            <i style="margin: 3px;" class="fa-sharp fa-solid fa-location-dot" ></i> <h6>Baloc road, Brgy San Ignacio San Pablo City <br> Laguna Philippines 4000</h6>
                         </div>
                     </div>
+
+                    <div class="contact-soc-media">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="message__content">
+                    <form action=""></form>
+                    <input type="text" placeholder="NAME">
+                    <input type="text" placeholder="EMAIL">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="MESSAGE"></textarea>
+                    <div class="btn-send">
+                        <button>SEND MESSAGE</button>
+                    </div>
+                    
+                </form>
                 </div>
             </div>
         </div>
@@ -58,7 +84,7 @@
 
     
 
-    <footer class="footer">
+    <footer class="footer border">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="soc-media-address__content">
@@ -80,5 +106,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
